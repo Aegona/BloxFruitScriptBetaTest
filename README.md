@@ -1,33 +1,4 @@
------------------------------------
 
-local Setting = {
-	["Auto Farm"] = false,
-	["Fast Attack"] = false, -- auto trun if you will truen on AutoFarm
-	["Far Attack"] = false, -- auto trun if you will truen on AutoFarm or FastAttack
-	---- Stats ----
-	["Auto Melee"] = false,
-}
-
-------------------------------------
-
-
-
-
-
-function SettingS()
-	local AutoFarmMini = Setting["Auto Farm"]
-	_G.Farm = AutoFarmMini
-	local AutoFar = Setting["Far Attack"]
-	_G.FarAttack = AutoFar
-		local AutoClickMini = Setting["Fast Attack"]
-	_G.FastAttack = AutoClickMini
-	local AutoMelee = Setting["Auto Melee"]
-	_G.Melee = AutoMelee
-end
-
-
-
-SettingS()
 local VirtualInputManager = game:GetService("VirtualInputManager")
 local RunService = game:GetService("RunService")
 
@@ -275,7 +246,7 @@ do
     Options.MyToggle:SetValue(_G.Farm)
     Options.MyToggle2:SetValue(_G.Melee)
 
-	 local Slider = Tabs.Main:AddSlider("Slider", {
+	 local Slider = Tabs.Stats:AddSlider("Slider", {
         Title = "Point",
         Description = "This is a slider",
         Default = 1,
