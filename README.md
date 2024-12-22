@@ -1,5 +1,15 @@
 
+-----------------------------------
 
+local Setting = {
+	["Auto Farm"] = true,
+	["Fast Attack"] = false, -- auto trun if you will truen on AutoFarm
+	["Far Attack"] = false, -- auto trun if you will truen on AutoFarm or FastAttack
+	---- Stats ----
+	["Auto Melee"] = true,
+}
+
+------------------------------------
 
 
 
